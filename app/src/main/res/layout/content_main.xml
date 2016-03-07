@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.example.clarachen.concurrencyconverter.MainActivity"
+    tools:showIn="@layout/activity_main">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/app_title_height"
+        android:text="@string/currencyconverterapp"
+        android:layout_centerHorizontal="true"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:textColor="@color/gold"
+        android:id="@+id/textView" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/dollarAmount"
+        android:layout_marginTop="50dp" />
+
+    <EditText
+        android:layout_width="200dp"
+        android:layout_height="40dp"
+        android:layout_marginLeft="140dp"
+        android:layout_marginTop="40dp"
+        android:id="@+id/dollarAmount"
+        android:inputType="number"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/convertTo"
+        android:layout_marginTop="100dp"
+        android:id="@+id/textView2" />
+
+    <ListView
+        android:id="@+id/convertList"
+        android:layout_width="200dp"
+        android:layout_height="40dp"
+        android:layout_alignTop="@+id/textView2"
+        android:layout_alignLeft="@+id/dollarAmount"
+        android:layout_alignStart="@+id/dollarAmount"
+        android:dividerHeight="1dp"
+        android:divider="@color/black"
+        android:layout_above="@+id/close_btn">
+
+
+    </ListView>
+
+    <Button
+        android:id="@+id/convert_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/convertButton"
+        android:onClick="convert"
+        android:layout_marginTop="@dimen/btn_margintop"
+        android:layout_toLeftOf="@+id/convertList"
+        android:layout_toStartOf="@+id/convertList" />
+
+    <Button
+        android:id="@+id/close_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/closeButton"
+        android:onClick="finishMainActivity"
+        android:layout_alignTop="@+id/convert_btn"
+        android:layout_alignRight="@+id/textView"
+        android:layout_alignEnd="@+id/textView" />
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/app_title_height"
+        android:text="New Text"
+        android:id="@+id/convertResult"
+        android:layout_marginTop="@dimen/result_top"
+        android:textStyle="bold"/>
+
+
+</RelativeLayout>
+
+
+

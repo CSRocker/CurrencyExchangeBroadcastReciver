@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">CurrencyConverter</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="currencyconverterapp">Currency Converter App</string>
+    <string name="dollarAmount">Dollar Amount ($): </string>
+    <string name="enterDollar">Enter Dollar Amount</string>
+    <string name="convertTo">Convert To: </string>
+
+    <string name="convertButton">Convert</string>
+    <string name="closeButton">Close</string>
+
+</resources>
